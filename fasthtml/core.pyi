@@ -204,7 +204,9 @@ class Redirect:
 async def _wrap_call(f, req, params):
     ...
 htmx_exts = {'head-support': 'https://unpkg.com/htmx-ext-head-support@2.0.1/head-support.js', 'preload': 'https://unpkg.com/htmx-ext-preload@2.0.1/preload.js', 'class-tools': 'https://unpkg.com/htmx-ext-class-tools@2.0.1/class-tools.js', 'loading-states': 'https://unpkg.com/htmx-ext-loading-states@2.0.0/loading-states.js', 'multi-swap': 'https://unpkg.com/htmx-ext-multi-swap@2.0.0/multi-swap.js', 'path-deps': 'https://unpkg.com/htmx-ext-path-deps@2.0.0/path-deps.js', 'remove-me': 'https://unpkg.com/htmx-ext-remove-me@2.0.0/remove-me.js', 'ws': 'https://unpkg.com/htmx-ext-ws/ws.js', 'chunked-transfer': 'https://unpkg.com/htmx-ext-transfer-encoding-chunked/transfer-encoding-chunked.js'}
-htmxsrc = Script(src='https://unpkg.com/htmx.org@next/dist/htmx.min.js')
+#htmxsrc = Script(src='https://unpkg.com/htmx.org@next/dist/htmx.min.js')
+htmxsrc  = Script(src="https://unpkg.com/htmx.org@2.0.3/dist/htmx.min.js")
+
 fhjsscr = Script(src='https://cdn.jsdelivr.net/gh/answerdotai/fasthtml-js@1.0.4/fasthtml.js')
 surrsrc = Script(src='https://cdn.jsdelivr.net/gh/answerdotai/surreal@main/surreal.js')
 scopesrc = Script(src='https://cdn.jsdelivr.net/gh/gnat/css-scope-inline@main/script.js')
